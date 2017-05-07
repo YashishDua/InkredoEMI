@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:truesdk="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    tools:context="com.example.lenovo.inkredoemi.Activities.MainActivity">
+    <com.truecaller.android.sdk.TrueButton
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/true_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        truesdk:truebutton_text="signIn"/>
+
+    <TextView
+        android:layout_margin="10sp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/OR"
+        android:layout_gravity="center_horizontal"
+        android:text="OR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:textSize="18sp"
+        android:inputType="number"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/edit_text_mobile_number"
+        android:hint="Mobile Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/button_proceed"
+        android:text="Proceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
